@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/image_button_exercise"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="1dp"
+        android:adjustViewBounds="true"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:onClick="openExercise"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/image_button_cook"
+        app:layout_constraintEnd_toStartOf="@+id/image_button_cook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/exercise" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exercise_button"
+        android:textColor="#003d99"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.249"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/image_button_cook"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:adjustViewBounds="true"
+        android:background="#FBFBFB"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:onClick="openCooking"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cook" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cook_button"
+        android:textColor="#003d99"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.654"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_cook" />
+
+    <ImageButton
+        android:id="@+id/image_button_music"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="36dp"
+        android:adjustViewBounds="true"
+        android:background="#FBFBFB"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:onClick="openMusic"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/image_button_exercise"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/music" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="@string/music_button"
+        android:textColor="#003d99"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/image_button_music" />
+
+    <ImageButton
+        android:id="@+id/image_button_craft"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:adjustViewBounds="true"
+        android:background="#FBFBFB"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:onClick="openCrafts"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/image_button_music"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_cook"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/craft" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/crafts_button"
+        android:textColor="#003d99"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/image_button_craft"
+        app:layout_constraintStart_toStartOf="@+id/image_button_craft"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_craft" />
+
+    <ImageButton
+        android:id="@+id/image_button_game"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="64dp"
+        android:adjustViewBounds="true"
+        android:background="#FBFBFB"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:onClick="openGames"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/image_button_music"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_music"
+        app:srcCompat="@drawable/game" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_button"
+        android:textColor="#003d99"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="@+id/image_button_game"
+        app:layout_constraintStart_toStartOf="@+id/image_button_game" />
+
+    <ImageButton
+        android:id="@+id/image_button_literature"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:adjustViewBounds="true"
+        android:background="#FBFBFB"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:onClick="openLiterature"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/image_button_game"
+        app:layout_constraintTop_toTopOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/literature" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/literature_button"
+        android:textColor="#003d99"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/image_button_literature"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_literature" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

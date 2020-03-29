@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Isolation Station</string>
+    <string name="exercise_button">EXERCISE</string>
+    <string name="cook_button">CULINARY ARTS</string>
+    <string name="music_button">MUSIC</string>
+    <string name="literature_button">LITERATURE</string>
+    <string name="game_button">GAMES</string>
+    <string name="crafts_button">CRAFTS</string>
+    <string name="exercise_option1">Do 10 situps</string>
+    <string name="link_text">LINK</string>
+    <string name="situp_img_descrip">Image of a woman doing situps</string>
+</resources>
+

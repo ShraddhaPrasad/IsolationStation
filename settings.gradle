@@ -1,0 +1,2 @@
+rootProject.name='LAhacks2020'
+include ':app'
